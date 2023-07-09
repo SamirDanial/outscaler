@@ -7,8 +7,7 @@ const MovieSchema = new mongoose.Schema({
   },
   director: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   mainCharecter: {
     type: String,

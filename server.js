@@ -10,7 +10,7 @@ app.use(cors());
 connectDB();
 
 const server = http.createServer(app);
-init(server); // Initialize Socket.IO
+init(server);
 
 app.use(express.json({ extended: false }));
 

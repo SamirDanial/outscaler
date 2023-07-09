@@ -17,7 +17,7 @@ const App = () => {
   const error = useSelector((state: any) => state.notification.error)
 
   useEffect(() => {
-    const socket = io('http://localhost:5000'); // Replace with your server URL
+    const socket = io('http://localhost:5000');
 
     socket.on('connect', () => {
       console.log('Connected to socket server');
@@ -39,7 +39,7 @@ const App = () => {
     });
 
     return () => {
-      socket.disconnect(); // Disconnect the socket when the component unmounts
+      socket.disconnect();
     };
   }, []);
 
